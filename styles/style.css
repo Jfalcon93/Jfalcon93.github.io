@@ -1,0 +1,402 @@
+/* All CSS is ordered in the order they appear on the page. */
+
+/* Universal website styling */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: lato;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* Container Properties */
+.container {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    font-family: lato;
+    color: #333333;
+    z-index: 1;
+}
+
+/* Container for all properties inside main container */
+.description-container {
+    padding-left: 105px;
+    padding-top: 175px;
+}
+
+/* Design properties for name and all main headers */
+.name {
+    font-weight: 300;
+    font-size: 52px;
+}
+
+.purple {
+    background: linear-gradient(to right, #E92BFF 20%, #4646FF 40%, #4646FF 60%, #E92BFF 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 12s linear infinite; 
+}
+
+.border {
+    margin-top: 7.5px;
+    border-top: 1px #555555 solid;
+    max-width: 315px;
+}
+
+.interests {
+    display: block;
+    padding-top: 17.5px;
+    line-height: 15px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+span {
+    padding-right: 25px;
+}
+
+#aboutMe:hover {
+    text-shadow: 2px 2px 8px #BD10E0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#music-header:hover {
+    text-shadow: 2px 2px 8px #BD10E0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#basketball-header:hover {
+    text-shadow: 2px 2px 8px #BD10E0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Each description section */
+.about {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    color: #333333;
+    font-weight: 300;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    animation: aboutopen;
+    animation-duration: 0.5s;
+}
+
+.music {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    color: #333333;
+    font-weight: 300;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    animation: aboutopen;
+    animation-duration: 0.5s;
+}
+
+.basketball {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    color: #333333;
+    font-weight: 300;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    animation: aboutopen;
+    animation-duration: 0.5s;
+}
+
+@keyframes aboutopen {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+/* Sizing for internal paragraph container */
+.section {
+    padding-top: 15px;
+    width: 400px;
+    line-height: 1.4;
+}
+
+.section a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+}
+
+.section b {
+    font-weight: 700;
+}
+
+.about-title {
+    padding-top: 25px;
+    font-weight: 900;
+}
+
+/* Skill Section */
+.skills {
+    list-style-type: none;
+    line-height: 1.4;
+}
+
+.row {
+    padding-top: 5px;
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+/* About Section Footer Properties */
+.footer {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.link-list {
+    list-style-type: none;
+    z-index: 1;
+}
+
+.link-list li {
+    z-index: 1;
+    float: left;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.link-list a {
+    z-index: 1;
+    text-decoration: none;
+    color: #555555;
+}
+
+/* This is all future CSS for Music Playlist Section
+.music-playlists {
+    padding-top: 5px;
+}
+
+.playlist-list {
+    padding-top: 0px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.playlist-list li {
+    padding-top: 5px;
+}
+
+.playlist-item:hover {
+    text-shadow: 2px 2px 8px #BD10E0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.music-platforms {
+    display: none;
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.music-platforms li {
+    display: inline-block;
+    padding-right: 10px;
+}
+*/
+
+/* Styling for Links */
+.links {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 700;
+}
+
+.links:hover {
+    text-shadow: 2px 2px 8px #BD10E0;
+    transition: 0.5s;
+}
+
+.link-email {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 700;
+}
+
+.link-email:hover {
+    text-shadow: 2px 2px 8px #BD10E0;
+    transition: 0.5s;
+}
+
+.links-about::after {
+    content: '';
+    width: 25%; height: 1px;
+    display: block;
+    margin-top: 0px;
+    right: 0;
+    background: #555555;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+.links-about:hover:after{
+    width: 100%;
+    left: 0;
+    background: #555555;
+}
+
+/* Background Particles CSS */
+div#particles.js {
+    z-index: -100;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+#particles-js {
+    z-index: -100;
+    position: absolute;
+    max-height: 1000px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%, 50%;
+}
+
+@media(max-width: 700px) {
+    .description-container {
+        padding-left: 52.5px;
+        padding-top: 125px;
+    }
+    
+    .name {
+        font-weight: 300;
+        font-size: 28px;
+    }
+    
+    .border {
+        margin-top: 7.5px;
+        border-top: 1px #555555 solid;
+        max-width: 155px;
+    }
+    
+    .interests {
+        display: block;
+        padding-top: 17.5px;
+        line-height: 15px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    span {
+        padding-right: 15px;
+    }  
+    
+    .about {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        color: #555555;
+        font-weight: 300;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+        animation: aboutopen;
+        animation-duration: 0.5s;
+    }
+
+    .music {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        color: #555555;
+        font-weight: 300;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+        animation: aboutopen;
+        animation-duration: 0.5s;
+    }
+
+    .basketball {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        color: #555555;
+        font-weight: 300;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+        animation: aboutopen;
+        animation-duration: 0.5s;
+    }
+    
+    .section {
+        padding-top: 15px;
+        width: 400px;
+        line-height: 1.4;
+    }
+
+    .about-title {
+        padding-top: 10px;
+        font-weight: 700;
+    }
+    
+    div#particles.js {
+        z-index: -100;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #particles-js {
+        z-index: -100;
+        position: absolute;
+        max-height: 700px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%, 50%;
+    }
+}
+
+.portfolio-temp {
+    margin: 20%;
+    padding: 5%;
+}
+
+.portfolio-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
