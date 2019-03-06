@@ -1,7 +1,3 @@
-particlesJS.load('particles-js', '/scripts/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-
 let about = document.querySelector('#about')
 let aboutHeader = document.querySelector('#aboutMe')
 let music = document.querySelector('#music')
