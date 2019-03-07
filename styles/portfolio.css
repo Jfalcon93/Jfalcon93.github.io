@@ -119,6 +119,11 @@ body {
 	        box-shadow: 4px 8px 6px -8px black;
 }
 
+video {
+    width: 420px;
+    height: 250px;
+}
+
 /* Column-Secondary classes are used for the right column spacing and styling */
 .column-secondary {
     width: 500px;
@@ -146,7 +151,7 @@ body {
     color: black;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
     .header {
         margin-bottom: 25px;
     }
@@ -194,6 +199,17 @@ body {
     
     .video-container {
         margin-top: 25px;
+    }
+    
+    .video {
+        -webkit-box-shadow: 0px 0px 4px -8px black;
+           -moz-box-shadow: 0px 0px 4px -8px black;
+                box-shadow: 0px 0px 4px -8px black;
+    }
+
+    video {
+        width: 350px;
+        height: 175px;
     }
     
     .column-secondary {

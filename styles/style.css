@@ -267,29 +267,10 @@ span {
     background: #555555;
 }
 
-/* Background Particles CSS */
-div#particles.js {
-    z-index: -100;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100vh;
-}
-
-#particles-js {
-    z-index: -100;
-    position: absolute;
-    max-height: 1000px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%, 50%;
-}
-
-@media(max-width: 700px) {
+@media(max-width: 768px) {
     .description-container {
-        padding-left: 52.5px;
-        padding-top: 125px;
+        padding-left: 35px;
+        padding-top: 85px;
     }
     
     .name {
@@ -300,19 +281,19 @@ div#particles.js {
     .border {
         margin-top: 7.5px;
         border-top: 1px #555555 solid;
-        max-width: 155px;
+        max-width: 170px;
     }
     
     .interests {
         display: block;
         padding-top: 17.5px;
         line-height: 15px;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 300;
     }
     
     span {
-        padding-right: 15px;
+        padding-right: 10px;
     }  
     
     .about {
@@ -325,7 +306,8 @@ div#particles.js {
         padding-bottom: 10px;
         padding-top: 5px;
         padding-left: 5px;
-        font-size: 15px;
+        padding-right: 5px;
+        font-size: 14px;
         animation: aboutopen;
         animation-duration: 0.5s;
     }
@@ -362,31 +344,13 @@ div#particles.js {
     
     .section {
         padding-top: 15px;
-        width: 400px;
+        width: 325px;
         line-height: 1.4;
     }
 
     .about-title {
         padding-top: 10px;
         font-weight: 700;
-    }
-    
-    div#particles.js {
-        z-index: -100;
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        height: 100vh;
-    }
-    
-    #particles-js {
-        z-index: -100;
-        position: absolute;
-        max-height: 700px;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%, 50%;
     }
 }
 
