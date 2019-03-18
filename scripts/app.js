@@ -64,21 +64,6 @@ const displayTriggerBasketball = document.querySelector('#basketball-header').ad
     } 
 })
 
-//const togglePlaylist = document.querySelector('#ignorant').addEventListener('click', function (e) {
-//    e.preventDefault()
-//    setDisplayPlaylist(e)
-//})
-//
-//const toggleLyrical = document.querySelector('#lyrical').addEventListener('click', function(e) {
-//    e.preventDefault()
-//    setDisplayPlaylist(e)
-//})
-//
-//const toggleRb = document.querySelector('#rb').addEventListener('click', function(e) {
-//    e.preventDefault()
-//    setDisplayPlaylist(e)
-//})
-
 const setDisplayPlaylist = function (id) {
     let childEl = id.target.firstElementChild
     
