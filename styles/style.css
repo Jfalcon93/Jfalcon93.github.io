@@ -1,7 +1,4 @@
-/* All CSS is ordered in the order they appear on the page. */
-
-/* Universal website styling */
-*{
+* {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
@@ -10,357 +7,400 @@
     font-family: lato;
 }
 
-body {
+/*Introductory Page*/
+.intro {
+    height: 100vh;
+    width: 100vw;
+    background-color: #171717;
+    padding-bottom: 100px;
+}
+
+.intro-container {
+    margin: 0 auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 510px;
+}
+
+.intro-container h1 {
+    font-size: 36px;
+    color: #E6FAFC;
+    transition: 0.5s;
+}
+
+.intro-container h1:hover {
+    text-shadow: 0px 1px 2px #E6FAFC;
+}
+
+.intro-container h2 {
+    font-size: 36px;
+}
+
+.intro-container p {
+    color: #e6fafc;
+    text-align: right;
+    width: 510px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.intro-container hr {
+    color: #E6FAFC;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Two colors for text spans*/
+.blue {
+    color: #14BDEB;
+}
+
+.red {
+    color: #EB5160;
+}
+
+/*Down Arrow*/
+.down_arrow {
+    width: 100%;
+    color: #14BDEB;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.down_arrow:hover {
+    cursor: pointer;
+    text-shadow: 0px 1px 4px #E6FAFC;
+}
+
+/*Mobile Menu*/
+label {
+    padding: 0 20px 0 0;
+    background-color: #171717;
+    color: #14bdeb;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle{
+    display: none;    
+}
+
+.mobile {
+    display: none;
+}
+
+/*Navbar*/
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #171717;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+}
+
+.navbar hr {
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 18px 14px;
+    text-decoration: none;
+}
+
+a span {
+    padding-left: 2px;
+}
+
+li a:hover {
+    background-color: #14bdeb;
+    color: #171717;
+}
+
+.active {
+    background-color: #14bdeb;
+    color: #171717;
+}
+
+.name {
+    color: #E6FAFC;
+    transition: 0.5s;
+}
+
+.name:hover {
+    background-color: #171717;
+    color: #e6fafc;
+    text-shadow: 0px 1px 4px #E6FAFC;
+}
+
+/*Main Container for all sections*/
+.main-container {
+    width: 100vw;
     background-color: #FFFFFF;
 }
 
-/* Container Properties */
-.container {
-    margin: 0;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: absolute;
-    font-family: lato;
-    color: #333333;
-    z-index: 1;
+/*Job Status container and styling*/
+.job-status {
+    margin: 0 auto;
+    padding: 150px 0px;
+    width: 100%;
+    text-align: center;
 }
 
-/* Container for all properties inside main container */
-.description-container {
-    padding-left: 105px;
-    padding-top: 175px;
+.job-status p {
+    font-size: 24px;
+    font-weight: 500;
 }
 
-/* Design properties for name and all main headers */
-.name {
-    font-weight: 300;
-    font-size: 52px;
+.blue-line {
+    width: 100%;
+    border-bottom: 1px solid #14bdeb;
 }
 
-.purple {
-    background: linear-gradient(to right, #E92BFF 20%, #4646FF 40%, #4646FF 60%, #E92BFF 80%);
-    background-size: 200% auto;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 12s linear infinite; 
+.red-back {
+    width: 100%;
+    border-bottom: 1px solid #171717;
 }
 
-.border {
-    margin-top: 7.5px;
-    border-top: 1px #555555 solid;
-    max-width: 315px;
-}
-
-.interests {
-    display: block;
-    padding-top: 17.5px;
-    line-height: 15px;
-    font-size: 22px;
-    font-weight: 300;
-}
-
-span {
-    padding-right: 25px;
-}
-
-#aboutMe:hover {
-    text-shadow: 2px 2px 8px #BD10E0;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#music-header:hover {
-    text-shadow: 2px 2px 8px #BD10E0;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#basketball-header:hover {
-    text-shadow: 2px 2px 8px #BD10E0;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-/* Each description section */
-.about {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    color: #333333;
-    font-weight: 300;
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 15px;
-    animation: aboutopen;
-    animation-duration: 0.5s;
-}
-
-.music {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    color: #333333;
-    font-weight: 300;
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 15px;
-    animation: aboutopen;
-    animation-duration: 0.5s;
-}
-
-.basketball {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    color: #333333;
-    font-weight: 300;
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 15px;
-    animation: aboutopen;
-    animation-duration: 0.5s;
-}
-
-@keyframes aboutopen {
-    from{opacity: 0}
-    to{opacity: 1}
-}
-
-/* Sizing for internal paragraph container */
-.section {
-    padding-top: 15px;
-    width: 400px;
-    line-height: 1.4;
-}
-
-.section a {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-}
-
-.section b {
-    font-weight: 700;
-}
-
-.about-title {
-    padding-top: 25px;
-    font-weight: 900;
-}
-
-/* Skill Section */
-.skills {
-    list-style-type: none;
-    line-height: 1.4;
-}
-
-.row {
-    padding-top: 5px;
+.main-row {
+    margin: 0 auto;
+    padding: 0 5%;
     display: flex;
 }
 
-.column {
-    flex: 50%;
+/*About Tag*/
+.left-container {
+    flex-basis: 50%;
+    text-align: right;
+    padding: 0 25px;
 }
 
-/* About Section Footer Properties */
-.footer {
-    padding-top: 25px;
-    padding-bottom: 15px;
-    margin-bottom: 50px;
-    z-index: 1;
+.left-container h2 {
+    padding: 25px 0 25px 0;
+    font-weight: 900;
+    text-decoration: underline;
 }
 
-.link-list {
-    list-style-type: none;
-    z-index: 1;
+/*All right side containers*/
+.right-container {
+    flex-basis: 50%;
+    padding: 0 25px;
 }
 
-.link-list li {
-    z-index: 1;
-    float: left;
-    padding-left: 0px;
-    padding-right: 15px;
+.right-container h2 {
+    padding: 25px 0 25px 0;
+    font-weight: 900;
 }
 
-.link-list a {
-    z-index: 1;
-    text-decoration: none;
-    color: #555555;
+.right-container p {
+    width: 350px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-/* This is all future CSS for Music Playlist Section
-.music-playlists {
-    padding-top: 5px;
+/*Styling for all Ordered Lists*/
+ol {
+    padding-left: 50px;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-.playlist-list {
-    padding-top: 0px;
-    cursor: pointer;
-    list-style-type: none;
+ol > li {
+    padding: 5px 5px;
 }
 
-.playlist-list li {
-    padding-top: 5px;
+#skills {
+    padding-top: 75px;
 }
 
-.playlist-item:hover {
-    text-shadow: 2px 2px 8px #BD10E0;
-    cursor: pointer;
-    transition: 0.5s;
+/*Unordered List stylings*/
+.list {
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-.music-platforms {
-    display: none;
-    padding-left: 10px;
-    list-style-type: none;
+.list > li {
+    padding: 5px 5px;
 }
 
-.music-platforms li {
-    display: inline-block;
-    padding-right: 10px;
-}
-*/
-
-/* Styling for Links */
-.links {
-    text-decoration: none;
-    color: #555555;
-    font-weight: 700;
+/*Contact Section*/
+.contact {
+    height: 100%;
+    margin: 250px 0 auto auto;
+    padding: 150px 0px;
+    background-color: #14bdeb;
 }
 
-.links:hover {
-    text-shadow: 2px 2px 8px #BD10E0;
-    transition: 0.5s;
-}
-
-.link-email {
-    text-decoration: none;
-    color: #555555;
-    font-weight: 700;
-}
-
-.link-email:hover {
-    text-shadow: 2px 2px 8px #BD10E0;
-    transition: 0.5s;
-}
-
-.links-about::after {
-    content: '';
-    width: 25%; height: 1px;
-    display: block;
-    margin-top: 0px;
-    right: 0;
-    background: #555555;
-    transition: width .2s ease;
-    -webkit-transition: width .2s ease;
-}
-
-.links-about:hover:after{
+.contact p {
     width: 100%;
-    left: 0;
-    background: #555555;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.8;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #171717;
 }
 
 @media(max-width: 768px) {
-    .description-container {
-        padding-left: 35px;
-        padding-top: 85px;
+    .intro {
+        width: 100%;
+    }
+
+    .intro-container {
+        padding-top: 30%;
+        padding-bottom: 50%;
+        width: 310px;
+    }
+
+    .intro-container h2 {
+        font-size: 32px;
+    }
+
+    .intro-container p {
+        width: 310px;
+        font-size: 14px;
+        line-height: 1.8;
+        word-spacing: 2px;
+        letter-spacing: 1px;
     }
     
-    .name {
-        font-weight: 300;
-        font-size: 28px;
-    }
-    
-    .border {
-        margin-top: 7.5px;
-        border-top: 1px #555555 solid;
-        max-width: 170px;
-    }
-    
-    .interests {
+    label {
         display: block;
-        padding-top: 17.5px;
-        line-height: 15px;
-        font-size: 14px;
-        font-weight: 300;
+        text-align: right;
+        cursor: pointer;
     }
     
-    span {
-        padding-right: 10px;
-    }  
-    
-    .about {
+    .navbar {
         display: none;
-        z-index: 1;
-        position: absolute;
-        color: #555555;
-        font-weight: 300;
-        margin-top: 5px;
-        padding-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 14px;
-        animation: aboutopen;
-        animation-duration: 0.5s;
-    }
-
-    .music {
-        display: none;
-        z-index: 1;
-        position: absolute;
-        color: #555555;
-        font-weight: 300;
-        margin-top: 5px;
-        padding-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 5px;
-        font-size: 15px;
-        animation: aboutopen;
-        animation-duration: 0.5s;
-    }
-
-    .basketball {
-        display: none;
-        z-index: 1;
-        position: absolute;
-        color: #555555;
-        font-weight: 300;
-        margin-top: 5px;
-        padding-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 5px;
-        font-size: 15px;
-        animation: aboutopen;
+        text-align: left;
+        width: 100%;
+        animation: openmenu;
         animation-duration: 0.5s;
     }
     
-    .section {
-        padding-top: 15px;
-        width: 325px;
-        line-height: 1.4;
+    @keyframes openmenu {
+        from{opacity: 0}
+        to{opacity: 1}
     }
 
-    .about-title {
-        padding-top: 10px;
-        font-weight: 700;
+    .left {
+        float: none;
     }
-}
 
-.portfolio-temp {
-    margin: 20%;
-    padding: 5%;
-}
+    .right {
+         float: none;
+    }
 
-.portfolio-paragraph {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
+    li a {
+        display: block;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    a span {
+        padding-left: 0px;
+    }
+
+    a .fab {
+        display: none;
+    }
+    
+    .mobile {
+        display: inline;
+    }
+    
+    #toggle:checked + .navbar {
+        display: block;
+    }
+    
+    .navbar hr {
+        display: block;
+        width: 100%;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .main-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-container {
+        flex-basis: 100%;
+        text-align: left;
+    }
+
+    .right-container {
+        flex-basis: 100%;
+    }
+
+    .right-container p {
+        width: 300px;
+        font-size: 16px;
+        word-spacing: 1px;
+        letter-spacing: 0px;
+    }
+
+    ol {
+        font-size: 16px;
+        word-spacing: 1px;
+        letter-spacing: 0px;
+    }
+
+    .list {
+        font-size: 16px;
+        word-spacing: 1px;
+        letter-spacing: 0px;
+    }
+
+    .contact {
+        margin: 100px 0 auto auto;
+        padding: 100px 0px;
+    }
+
+    .contact p {
+        font-size: 18px;
+        word-spacing: 1px;
+    }
 }

@@ -6,105 +6,124 @@
     <meta http-equiv="Cache-control" content="public">
     <meta name="author" content="Jordan Falcon">
     <meta name="description" content="Jordan Falcon is a web developer based in Denver, CO.">
-    <title>Falcon | Home</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Falcon | Home</title>
 </head>
 <body>
-    <div class="container">
-       <div class="description-container">
-           <p class="name purple">
-               Jordan Falcon
-           </p>
-           <div class="border"></div>
-            <p class="interests">
-                <span class="" id="aboutMe">web developer</span>
-                <span>•</span>
-                <span id="music-header">music &lt;3</span>
-                <span>•</span>
-                <span id="basketball-header">basketball &lt;3</span>
-            </p>
-        <div class="about" id="about">
-          <p class="section">
-              I'm a 25 year old aspiring web developer currently living in Denver, CO.
-              I spent the previous two years working at <b>IBM</b> within the <b>Data Acquisition Capture Team</b> 
-              as a <b>software developer</b>.
-              <br>
-              <br>
-              Born and raised in Trenton, ND, I spent two years at the <b>University of Notre Dame</b>
-              before transferring back to my home state to attend <b>North Dakota State University</b> where
-              I completed my <b>bachelor's degree</b> in <b>Computer Science</b>.
-              <br>
-              <br>
-              If you have any questions, wanna talk about basketball or just wanna chat, shoot me an email <a class="links-about" href="mailto:jfalcon9319@gmail.com?Subject=Hello%20Friend">here</a>.
-          </p>
-          <div class="about-title">
-              Skills
-          </div>
-          <div class="row">
-             <div class="column">
-                 <ul class="skills">
-                      <li>HTML, CSS, JavaScript</li>
-                      <li>Node.js</li>
-                      <li>Java, C#</li>
+      <div class="intro" id="home">
+         <div class="intro-container">
+             <h1 class="">Jordan Falcon</h1>
+             <h2>
+                 <span class="blue">Web Developer</span>
+                 <br>
+                 <span class="red">Music &lt;3</span>
+             </h2>
+             <hr>
+             <p>
+                 "I'd rather die enormous than live dormant that's how we on it"
+                 - Jay Z
+             </p>
+         </div>
+         <div class="down">
+            <a href="#about">
+                <i class="fas fa-chevron-down down_arrow"></i>
+            </a>
+         </div>
+      </div>
+        <div class="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/> 
+            <ul class="navbar" id="navigation">
+             <li><a class="name left" href="#home">Jordan Falcon</a></li>
+             <li><a class="blue left" href="#about">About</a></li>
+             <li><a class="blue left" href="#skills">Skills</a></li>
+             <li><a class="blue left" href="#contact">Contact</a></li>
+             <hr>
+             <li>
+                <a class="blue right" href="https://itunes.apple.com/profile/YungYosh">
+                    <i class="fab fa-apple"></i><span>Music</span>
+                </a>
+             </li>
+             <li>
+                 <a class="blue right" href="https://github.com/Jfalcon93">
+                     <i class="fab fa-github"></i><span class="mobile">GitHub</span>
+                 </a>
+             </li>
+             <li><a class="blue right" href="mailto:jfalcon9319@gmail.com?Subject=Hello%20Friend">jfalcon9319@gmail.com</a></li>
+          </ul>
+        </div>   
+      <div class="main-container">
+         <div class="job-status about" id="about">
+             <p>
+                 <span class="blue-line">Currently Available </span>☺️
+             </p>
+         </div>
+          <div class="main-row">
+              <div class="left-container">
+                  <h2>About</h2>
+              </div>
+              <div class="right-container">
+                 <h2>TL;DR</h2>
+                  <p>
+                      Native American/Hispanic. 25 Year 
+                      Old. Web Developer. Music 
+                      Lover. Basketball Enthusiast. 
+                      <span>Professional Tweeter.</span> Bad Beat Maker.
+                  </p>
+                  <h2>Story</h2>
+                  <p>
+                      I’m a 25 year old web 
+                      developer currently living in Denver, 
+                      CO. I spent the previous two years 
+                      working at <span class="blue-line">IBM</span> within the <span class="blue-line">Data 
+                      Acquisition Capture Team</span> as a 
+                      <span class="blue-line">software developer</span>. 
+                      <br>
+                      <br>
+                      Born and raised in Trenton, ND, I 
+                      spent two years at the <span class="blue-line">University of 
+                      Notre Dame</span> before transferring back 
+                      to my home state to attend <span class="blue-line">North 
+                      Dakota State University</span> where I 
+                      completed my <span class="blue-line">B.S. in 
+                      Computer Science.</span> 
+                  </p>
+                  <h2>Interests</h2>
+                  <ul class="list">
+                      <li>Music  🎶 (Hip-Hop Hip-Hop)</li>
+                      <li>Basketball  🏀 (LeBron's =  🐐)</li>
+                      <li>Cooking  🍽 (I'm aight)</li>
+                      <li>Coding (only sometimes  🤓)</li>
+                      <li>Going to the Gym (I'm still litttttle)</li>
+                  </ul>
+                  <h2 id="skills">Skills/Languages</h2>
+                  <ul class="list">
+                      <li>&lt;HTML&gt; + CSS { }</li>
+                      <li>JavaScript</li>
+                      <li>Sketch</li>
+                      <li>Adobe XD</li>
                       <li>Python</li>
-                  </ul>
-             </div>
-             <div class="column">
-                 <ul class="skills">
-                      <li>Hadoop, Hive, Kafka</li>
+                      <li>Java</li>
                       <li>MySQL</li>
-                      <li>Docker</li>
+                      <li>Git + GitHub</li>
+                      <li>Hadoop + Hive + Kafka</li>
+                      <li>Docker + Kubernetes</li>
+                      <li>Jira</li>
                   </ul>
-             </div>
+              </div>
           </div>
-          <div class="footer">
-              <ul class="link-list">
-                  <li>
-                      <a class="links-about" href="/docs/Resume.pdf">Résumé</a>
-                  </li>
-                  <li>
-                      <a class="links-about" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li>
-                      <a class="links-about" href="https://github.com/Jfalcon93">GitHub</a>
-                  </li>
-              </ul>
+          <div class="contact" id="contact">
+              <p>
+                  Wanna chat? Shoot me an <span class="red-back"><a class="link" href="mailto:jfalcon9319@gmail.com?Subject=Hello%20Friend">email</a> </span>✉️
+                  <br>
+                  You can also check out my <span class="red-back"><a class="link" href="Jordan%20Falcon%20Resume%20-%20CO%20.pdf">resume</a>  </span>📄
+              </p>
           </div>
-       </div>
-        <div class="music" id="music">
-            <div class="section">
-                <p>
-                    I love music with every fiber of my body and I want to further dedicate
-                    a space to it on my website but for now this section will be a place for 
-                    links to playlists I make and update regularly. 
-                    <br>
-                    <br>
-                    You can check out my apple music profile 
-                    <a class="links-about" href="https://itunes.apple.com/profile/YungYosh">here</a>.
-                </p>
-            </div>
-        </div>
-        <div class="basketball" id="basketball">
-            <div class="section">
-                <p>
-                    Ever since I was a toddler, basketball has been ever present in 
-                    my life. I would stay at my grandparents' house while my mom worked
-                    night shifts and we'd always watch the Chicago Bulls games.
-                    <br>
-                    <br>
-                    Basketball is something I cherish and hold close to my heart. 
-                    Whether I'm shooting around at the local YMCA or watching an NBA game,
-                    basketball has been a consistant part of my life.
-                    <br>
-                    <br>
-                    This section I want to dedicate to my love of the game and include posts
-                    about the NBA and my perspective on different game footage or players.
-                </p>
-            </div>
-        </div>
-       </div>
-    </div>
-    <script src="scripts/app.js"></script>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="scripts/main.js"></script>
 </body>
 </html>
