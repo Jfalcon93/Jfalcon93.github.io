@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  opening();
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -18,7 +19,30 @@ $(document).ready(function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         
-      });
+      })
     } // End if
-  });
-});
+  }) 
+})
+
+function opening () {
+    $('a[data-o]').click(function(e) {
+        
+        e.preventDefault();
+        
+        let open = $(this).attr('data-o');
+        $('[data-ob="' + open + '"]').removeClass('off').addClass('on');
+        //$('[data-o="' + open + '"]').removeClass('blue-line')
+        
+        $(this).content().unwrap();
+        
+    });
+}
+
+const resetText = document.getElementById('reset');
+resetText.addEventListener('click', e => {
+    const spans = document.getElementById('story').querySelectorAll('span');
+    for (let i = 0; i <= spans.length; i++){
+        spans[i].classList.remove('on');
+        spans[i].classList.add('off');
+    }
+})

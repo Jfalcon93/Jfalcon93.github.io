@@ -12,18 +12,18 @@
     height: 100vh;
     width: 100vw;
     background-color: #171717;
-    padding-bottom: 100px;
+    padding-bottom: 96px;
 }
 
 .intro-container {
     margin: 0 auto;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    width: 510px;
+    padding-top: 192px;
+    padding-bottom: 192px;
+    width: 512px;
 }
 
 .intro-container h1 {
-    font-size: 36px;
+    font-size: 32px;
     color: #E6FAFC;
     transition: 0.5s;
 }
@@ -33,13 +33,13 @@
 }
 
 .intro-container h2 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .intro-container p {
     color: #e6fafc;
     text-align: right;
-    width: 510px;
+    width: 512px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.8;
@@ -49,13 +49,13 @@
 
 .intro-container hr {
     color: #E6FAFC;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 /*Two colors for text spans*/
 .blue {
-    color: #14BDEB;
+    color: hsla(193, 84%, 50%, 1);
 }
 
 .red {
@@ -123,11 +123,11 @@ label {
     float: right;
 }
 
-li a {
+.nav-link {
     display: block;
     text-align: center;
     font-size: 18px;
-    padding: 18px 14px;
+    padding: 16px 12px;
     text-decoration: none;
 }
 
@@ -135,7 +135,7 @@ a span {
     padding-left: 2px;
 }
 
-li a:hover {
+.nav-link:hover {
     background-color: #14bdeb;
     color: #171717;
 }
@@ -165,7 +165,7 @@ li a:hover {
 /*Job Status container and styling*/
 .job-status {
     margin: 0 auto;
-    padding: 150px 0px;
+    padding: 128px 0px;
     width: 100%;
     text-align: center;
 }
@@ -175,14 +175,92 @@ li a:hover {
     font-weight: 500;
 }
 
+.reset {
+    font-size: 16px;
+    padding: 4px 6px;
+    border-radius: 8px;
+    border: 1px solid hsla(193, 100%, 75%);
+    font-weight: 700;
+    margin-left: 256px;
+    align-items: baseline;
+    transition: 0.5s;
+}
+
+.reset:hover {
+    cursor: pointer;
+    background-color: hsla(193, 100%, 75%);
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: inline;
+}
+
 .blue-line {
     width: 100%;
     border-bottom: 1px solid #14bdeb;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.blue-line:hover {
+    border-bottom: 3px solid #14bdeb;
 }
 
 .red-back {
     width: 100%;
     border-bottom: 1px solid #171717;
+}
+
+.red-line {
+    width: 100%;
+    border-bottom: 1px solid #EB5160;
+}
+
+.arrow {
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    color: #14bdeb;
+    transition: 0.5s;
+}
+
+.project-item {
+    text-decoration: none;
+    color: black;
+}
+
+.project-item .tooltip {
+    visibility: hidden;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: black;
+    background-color: hsla(193, 100%, 75%);
+    padding: 4px;
+  
+  /* Position the tooltip */
+    position: relative;
+    margin-left: 12px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+
+.project-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-item:hover {
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .main-row {
@@ -195,11 +273,12 @@ li a:hover {
 .left-container {
     flex-basis: 50%;
     text-align: right;
-    padding: 0 25px;
+    padding: 0 24px;
 }
 
 .left-container h2 {
-    padding: 25px 0 25px 0;
+    font-size: 24px;
+    padding: 24px 0 24px 0;
     font-weight: 900;
     text-decoration: underline;
 }
@@ -207,69 +286,71 @@ li a:hover {
 /*All right side containers*/
 .right-container {
     flex-basis: 50%;
-    padding: 0 25px;
+    padding: 0 24px;
 }
 
 .right-container h2 {
-    padding: 25px 0 25px 0;
+    font-size: 24px;
+    padding: 24px 0 24px 0;
     font-weight: 900;
 }
 
 .right-container p {
-    width: 350px;
-    padding-bottom: 50px;
+    width: 384px;
+    padding-bottom: 48px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.8;
     word-spacing: 2px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 /*Styling for all Ordered Lists*/
 ol {
-    padding-left: 50px;
-    padding-bottom: 25px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.8;
-    word-spacing: 2px;
-    letter-spacing: 1px;
-}
-
-ol > li {
-    padding: 5px 5px;
-}
-
-#skills {
-    padding-top: 75px;
-}
-
-/*Unordered List stylings*/
-.list {
-    padding-left: 25px;
+    padding-left: 48px;
+    padding-bottom: 24px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.8;
     word-spacing: 2px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
+}
+
+ol > li {
+    padding: 4px 4px;
+}
+
+#skills {
+    padding-top: 64px;
+}
+
+/*Unordered List stylings*/
+.list {
+    padding-left: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 0px;
 }
 
 .list > li {
-    padding: 5px 5px;
+    padding: 4px 4px;
 }
 
 /*Contact Section*/
 .contact {
     height: 100%;
-    margin: 250px 0 auto auto;
-    padding: 150px 0px;
-    background-color: #14bdeb;
+    margin: 256px 0 auto auto;
+    padding: 128px 0px;
+    background-color: hsla(193, 100%, 50%);
 }
 
 .contact p {
+    color: hsla(213, 100%, 10%, 1);
     width: 100%;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.8;
     word-spacing: 2px;
     text-align: center;
@@ -286,9 +367,9 @@ ol > li {
     }
 
     .intro-container {
-        padding-top: 30%;
-        padding-bottom: 50%;
-        width: 310px;
+        padding-top: 128px;
+        padding-bottom: 128px;
+        width: 256px;
     }
 
     .intro-container h2 {
@@ -296,11 +377,12 @@ ol > li {
     }
 
     .intro-container p {
-        width: 310px;
+        text-align: left;
+        width: 256px;
         font-size: 14px;
         line-height: 1.8;
         word-spacing: 2px;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
     }
     
     label {
@@ -315,6 +397,7 @@ ol > li {
         width: 100%;
         animation: openmenu;
         animation-duration: 0.5s;
+        box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
     }
     
     @keyframes openmenu {
@@ -330,7 +413,7 @@ ol > li {
          float: none;
     }
 
-    li a {
+    .nav-link {
         display: block;
         text-align: left;
         padding-left: 25px;
@@ -376,10 +459,32 @@ ol > li {
     }
 
     .right-container p {
-        width: 300px;
+        width: 256px;
         font-size: 16px;
         word-spacing: 1px;
         letter-spacing: 0px;
+    }
+    
+    .project-item .tooltip {
+        visibility: visible;
+        width: 256px;
+        font-size: 12px;
+        border-radius: 8px;
+        color: black;
+        background-color: hsla(193, 100%, 75%);
+        padding: 2px;
+
+      /* Position the tooltip */
+        position: relative;
+        margin-left: 4px;
+        opacity: 1;
+        transition: opacity 0.5s;
+        z-index: 1;
+    }
+    
+    .project-item {
+        display: flex;
+        flex-direction: column;
     }
 
     ol {
@@ -395,8 +500,8 @@ ol > li {
     }
 
     .contact {
-        margin: 100px 0 auto auto;
-        padding: 100px 0px;
+        margin: 96px 0 auto auto;
+        padding: 96px 0px;
     }
 
     .contact p {
