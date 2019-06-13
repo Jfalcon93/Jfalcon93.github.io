@@ -466,7 +466,7 @@ ol > li {
     }
     
     .reset {
-        margin-left: 96px;
+        margin-left: 24px;
         align-items: baseline;
         transition: 0.5s;
     }
