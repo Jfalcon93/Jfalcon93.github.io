@@ -356,11 +356,12 @@ hr:hover {
 
 @media (max-width: 768px) {
     body {
-        width: 384px;
+        width: 256px;
         margin: 0 auto;
     }
     
     .navbar {
+        width: 256px;
         padding-top: 12px;
         padding-bottom: 12px;
     }
@@ -412,7 +413,7 @@ hr:hover {
     }
     
     .container {
-        width: 384px;
+        width: 256px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -446,7 +447,7 @@ hr:hover {
         align-content: center;
         align-items: center;
         margin-top: 64px;
-        width: 384px;
+        width: 256px;
     }
     
     .left-city {
@@ -495,7 +496,11 @@ hr:hover {
     }
     
     .restaurants {
-        width: 384px;
+        width: 256px;
+    }
+    
+    .visit-link {
+        float: none;
     }
     
     cuisine-top h2 {
