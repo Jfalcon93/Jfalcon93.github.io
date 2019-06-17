@@ -472,20 +472,7 @@ ol > li {
     }
     
     .project-item .tooltip {
-        visibility: visible;
-        width: 256px;
-        font-size: 12px;
-        border-radius: 8px;
-        color: black;
-        background-color: hsla(193, 100%, 75%);
-        padding: 2px;
-
-      /* Position the tooltip */
-        position: relative;
-        margin-left: 4px;
-        opacity: 1;
-        transition: opacity 0.5s;
-        z-index: 1;
+        display: none;
     }
     
     .project-item {
