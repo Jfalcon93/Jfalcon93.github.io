@@ -30,8 +30,6 @@ const toggleTodo = (id) => {
     if (todo) {
         todo.completed = !todo.completed
     }
-    
-    
 }
 
 // Function to Render Filtered Todos onto Screen
